@@ -74,7 +74,10 @@
     "test:smoke:fast": "playwright test tests/smoke/critical-smoke.spec.js --project=chromium --workers=5",
     "test:smoke:headed": "playwright test tests/smoke/ --headed",
     "test:regression:fast": "playwright test tests/pushengage-regression/critical/ --project=chromium --workers=10 --retries=1",
-    "test:regression:parallel": "playwright test tests/pushengage-regression/ --project=chromium --workers=20 --retries=1"
+    "test:regression:parallel": "playwright test tests/pushengage-regression/ --project=chromium --workers=20 --retries=1",
+    "test:ledgerport": "playwright test --config=playwright-ledgerport.config.js",
+    "test:ledgerport:smoke": "playwright test tests/ledgerport-regression/specs/smoke/ --config=playwright-ledgerport.config.js",
+    "test:ledgerport:regression": "playwright test tests/ledgerport-regression/specs/regression/ --config=playwright-ledgerport.config.js"
   },
   "keywords": [
     "playwright",
